@@ -1,0 +1,52 @@
+{% extends 'list.html' %}
+{% block breadcrumb %}
+    {% for item in breadcrumb %}
+        <li class="breadcrumb-item"><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endfor %}
+{% endblock %}
+ 
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-3">Lista de Categorías</h2>
+    
+    <a href="{% url 'categories:category_create' %}" class="btn btn-primary mb-3">Nueva Categoría</a>
+ 
+    {% if categories %} 
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Categoría</th>
+                        <th>Padre</th>
+                        <th>Código</th>
+                        <th>Siglas</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for category in categories %}
+                    <tr>
+                        <td>{{ category.idCategory }}</td>
+                        <td>{{ category.category }}</td>
+                        <td>{{ category.parent.category|default:"-" }}</td>
+                        <td>{{ category.codigo_base }}</td>
+                        <td>{{ category.siglas }}</td>
+                        <td>
+                            <a href="{% url 'categories:category_edit' category.idCategory %}" class="btn btn-warning btn-sm">
+                                <i class="fas fa-edit fa-xs"></i>
+                            </a>
+                            <a href="{% url 'categories:category_delete' category.idCategory %}" class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash-alt fa-xs"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <p>No hay categorías disponibles.</p>
+    {% endif %}
+</div>
+{% endblock %}

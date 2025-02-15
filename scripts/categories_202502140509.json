@@ -1,0 +1,2488 @@
+{
+"categories": [
+	{
+		"idCategory" : 1,
+		"category" : "ADMIN",
+		"codigo_base" : "900",
+		"siglas" : "AD",
+		"parent_id" : null
+	},
+	{
+		"idCategory" : 2,
+		"category" : "CAPILAR",
+		"codigo_base" : "901",
+		"siglas" : "CA",
+		"parent_id" : null
+	},
+	{
+		"idCategory" : 3,
+		"category" : "ACCESORIOS",
+		"codigo_base" : "9011",
+		"siglas" : "CAAC",
+		"parent_id" : 2
+	},
+	{
+		"idCategory" : 4,
+		"category" : "DECORACION",
+		"codigo_base" : "901101",
+		"siglas" : "CAACDE",
+		"parent_id" : 3
+	},
+	{
+		"idCategory" : 5,
+		"category" : "EXTENCIONES",
+		"codigo_base" : "901101001",
+		"siglas" : "CAACDEEX",
+		"parent_id" : 4
+	},
+	{
+		"idCategory" : 6,
+		"category" : "PEGAMENTO",
+		"codigo_base" : "901101002",
+		"siglas" : "CAACDEPE",
+		"parent_id" : 4
+	},
+	{
+		"idCategory" : 7,
+		"category" : "SUJETADOR",
+		"codigo_base" : "901102",
+		"siglas" : "CAACSU",
+		"parent_id" : 3
+	},
+	{
+		"idCategory" : 8,
+		"category" : "CINTILLO",
+		"codigo_base" : "901102001",
+		"siglas" : "CAACSUCI",
+		"parent_id" : 7
+	},
+	{
+		"idCategory" : 9,
+		"category" : "DIADEMA",
+		"codigo_base" : "901102002",
+		"siglas" : "CAACSUDI",
+		"parent_id" : 7
+	},
+	{
+		"idCategory" : 10,
+		"category" : "INVISIBLE",
+		"codigo_base" : "901102003",
+		"siglas" : "CAACSUIN",
+		"parent_id" : 7
+	},
+	{
+		"idCategory" : 11,
+		"category" : "LIGA",
+		"codigo_base" : "901102004",
+		"siglas" : "CAACSULI",
+		"parent_id" : 7
+	},
+	{
+		"idCategory" : 12,
+		"category" : "MALLA",
+		"codigo_base" : "901102005",
+		"siglas" : "CAACSUMA",
+		"parent_id" : 7
+	},
+	{
+		"idCategory" : 13,
+		"category" : "PINZA",
+		"codigo_base" : "901102006",
+		"siglas" : "CAACSUPI",
+		"parent_id" : 7
+	},
+	{
+		"idCategory" : 14,
+		"category" : "VINCHA",
+		"codigo_base" : "901102007",
+		"siglas" : "CAACSUVI",
+		"parent_id" : 7
+	},
+	{
+		"idCategory" : 15,
+		"category" : "HERRAMIENTAS",
+		"codigo_base" : "9012",
+		"siglas" : "CAHE",
+		"parent_id" : 2
+	},
+	{
+		"idCategory" : 16,
+		"category" : "CORTE",
+		"codigo_base" : "901201",
+		"siglas" : "CAHECO",
+		"parent_id" : 15
+	},
+	{
+		"idCategory" : 17,
+		"category" : "ATOMIZADOR",
+		"codigo_base" : "901201001",
+		"siglas" : "CAHECOAT",
+		"parent_id" : 16
+	},
+	{
+		"idCategory" : 18,
+		"category" : "CAPA",
+		"codigo_base" : "901201002",
+		"siglas" : "CAHECOCA",
+		"parent_id" : 16
+	},
+	{
+		"idCategory" : 19,
+		"category" : "CEPILLO",
+		"codigo_base" : "901201003",
+		"siglas" : "CAHECOCE",
+		"parent_id" : 16
+	},
+	{
+		"idCategory" : 20,
+		"category" : "GILLETE",
+		"codigo_base" : "901201004",
+		"siglas" : "CAHECOGI",
+		"parent_id" : 16
+	},
+	{
+		"idCategory" : 21,
+		"category" : "NAVAJA",
+		"codigo_base" : "901201005",
+		"siglas" : "CAHECONA",
+		"parent_id" : 16
+	},
+	{
+		"idCategory" : 22,
+		"category" : "PEINE",
+		"codigo_base" : "901201006",
+		"siglas" : "CAHECOPE",
+		"parent_id" : 16
+	},
+	{
+		"idCategory" : 23,
+		"category" : "RULO",
+		"codigo_base" : "901201007",
+		"siglas" : "CAHECORU",
+		"parent_id" : 16
+	},
+	{
+		"idCategory" : 24,
+		"category" : "TIJERA",
+		"codigo_base" : "901201008",
+		"siglas" : "CAHECOTI",
+		"parent_id" : 16
+	},
+	{
+		"idCategory" : 25,
+		"category" : "TOALLA",
+		"codigo_base" : "901201009",
+		"siglas" : "CAHECOTO",
+		"parent_id" : 16
+	},
+	{
+		"idCategory" : 27,
+		"category" : "MQ MÁQUINA",
+		"codigo_base" : "901202",
+		"siglas" : "CAHEMQ",
+		"parent_id" : 15
+	},
+	{
+		"idCategory" : 28,
+		"category" : "BARBERA",
+		"codigo_base" : "901202001",
+		"siglas" : "CAHEMQBA",
+		"parent_id" : 27
+	},
+	{
+		"idCategory" : 29,
+		"category" : "PLANCHA",
+		"codigo_base" : "901202002",
+		"siglas" : "CAHEMQPL",
+		"parent_id" : 27
+	},
+	{
+		"idCategory" : 30,
+		"category" : "REPUESTO",
+		"codigo_base" : "901202003",
+		"siglas" : "CAHEMQRE",
+		"parent_id" : 27
+	},
+	{
+		"idCategory" : 31,
+		"category" : "SECADORA",
+		"codigo_base" : "901202004",
+		"siglas" : "CAHEMQSE",
+		"parent_id" : 27
+	},
+	{
+		"idCategory" : 32,
+		"category" : "TEMPORIZADOR",
+		"codigo_base" : "901202005",
+		"siglas" : "CAHEMQTE",
+		"parent_id" : 27
+	},
+	{
+		"idCategory" : 33,
+		"category" : "TINTE",
+		"codigo_base" : "901203",
+		"siglas" : "CAHETI",
+		"parent_id" : 15
+	},
+	{
+		"idCategory" : 34,
+		"category" : "BROCHA",
+		"codigo_base" : "901203001",
+		"siglas" : "CAHETIBR",
+		"parent_id" : 33
+	},
+	{
+		"idCategory" : 35,
+		"category" : "GORRO",
+		"codigo_base" : "901203002",
+		"siglas" : "CAHETIGO",
+		"parent_id" : 33
+	},
+	{
+		"idCategory" : 36,
+		"category" : "GUANTE",
+		"codigo_base" : "901203003",
+		"siglas" : "CAHETIGU",
+		"parent_id" : 33
+	},
+	{
+		"idCategory" : 37,
+		"category" : "RECIPIENTE",
+		"codigo_base" : "901203004",
+		"siglas" : "CAHETIRE",
+		"parent_id" : 33
+	},
+	{
+		"idCategory" : 38,
+		"category" : "APLICADOR",
+		"codigo_base" : "901203005",
+		"siglas" : "CAHETIAP",
+		"parent_id" : 33
+	},
+	{
+		"idCategory" : 39,
+		"category" : "FRASCO",
+		"codigo_base" : "901203006",
+		"siglas" : "CAHETIFR",
+		"parent_id" : 33
+	},
+	{
+		"idCategory" : 40,
+		"category" : "PALETA",
+		"codigo_base" : "901203007",
+		"siglas" : "CAHETIPA",
+		"parent_id" : 33
+	},
+	{
+		"idCategory" : 41,
+		"category" : "CIRUJIA",
+		"codigo_base" : "901204",
+		"siglas" : "CAHECI",
+		"parent_id" : 15
+	},
+	{
+		"idCategory" : 42,
+		"category" : "PAPEL",
+		"codigo_base" : "901204001",
+		"siglas" : "CAHECIPA",
+		"parent_id" : 41
+	},
+	{
+		"idCategory" : 43,
+		"category" : "PRODUCTO",
+		"codigo_base" : "9013",
+		"siglas" : "CAPR",
+		"parent_id" : 2
+	},
+	{
+		"idCategory" : 44,
+		"category" : "CIRUJIA",
+		"codigo_base" : "901301",
+		"siglas" : "CAPRCI",
+		"parent_id" : 43
+	},
+	{
+		"idCategory" : 45,
+		"category" : "ALISADO",
+		"codigo_base" : "901301001",
+		"siglas" : "CAPRCIAL",
+		"parent_id" : 44
+	},
+	{
+		"idCategory" : 46,
+		"category" : "PERMANENTE",
+		"codigo_base" : "901301002",
+		"siglas" : "CAPRCIPE",
+		"parent_id" : 44
+	},
+	{
+		"idCategory" : 47,
+		"category" : "HIGIENE",
+		"codigo_base" : "901302",
+		"siglas" : "CAPRHI",
+		"parent_id" : 43
+	},
+	{
+		"idCategory" : 48,
+		"category" : "ACONDICIONADOR",
+		"codigo_base" : "901302001",
+		"siglas" : "CAPRHIAC",
+		"parent_id" : 47
+	},
+	{
+		"idCategory" : 49,
+		"category" : "SHAMPOO",
+		"codigo_base" : "901302002",
+		"siglas" : "CAPRHISH",
+		"parent_id" : 47
+	},
+	{
+		"idCategory" : 50,
+		"category" : "MOLDEADOR",
+		"codigo_base" : "901303",
+		"siglas" : "CAPRMO",
+		"parent_id" : 43
+	},
+	{
+		"idCategory" : 51,
+		"category" : "CERA",
+		"codigo_base" : "901303001",
+		"siglas" : "CAPRMOCE",
+		"parent_id" : 50
+	},
+	{
+		"idCategory" : 52,
+		"category" : "CREMA",
+		"codigo_base" : "901303002",
+		"siglas" : "CAPRMOCR",
+		"parent_id" : 50
+	},
+	{
+		"idCategory" : 53,
+		"category" : "FIJADOR",
+		"codigo_base" : "901303003",
+		"siglas" : "CAPRMOFI",
+		"parent_id" : 50
+	},
+	{
+		"idCategory" : 54,
+		"category" : "GEL",
+		"codigo_base" : "901303004",
+		"siglas" : "CAPRMOGE",
+		"parent_id" : 50
+	},
+	{
+		"idCategory" : 55,
+		"category" : "MOUSSE",
+		"codigo_base" : "901303005",
+		"siglas" : "CAPRMOMO",
+		"parent_id" : 50
+	},
+	{
+		"idCategory" : 56,
+		"category" : "SILICONA",
+		"codigo_base" : "901303006",
+		"siglas" : "CAPRMOSI",
+		"parent_id" : 50
+	},
+	{
+		"idCategory" : 57,
+		"category" : "LACA",
+		"codigo_base" : "901303007",
+		"siglas" : "CAPRMOLA",
+		"parent_id" : 50
+	},
+	{
+		"idCategory" : 58,
+		"category" : "TINTE",
+		"codigo_base" : "901304",
+		"siglas" : "CAPRTI",
+		"parent_id" : 43
+	},
+	{
+		"idCategory" : 59,
+		"category" : "ABLANDADOR",
+		"codigo_base" : "901304001",
+		"siglas" : "CAPRTIAB",
+		"parent_id" : 58
+	},
+	{
+		"idCategory" : 60,
+		"category" : "AGUA",
+		"codigo_base" : "901304002",
+		"siglas" : "CAPRTIAG",
+		"parent_id" : 58
+	},
+	{
+		"idCategory" : 61,
+		"category" : "AMONIACO",
+		"codigo_base" : "901304003",
+		"siglas" : "CAPRTIAM",
+		"parent_id" : 58
+	},
+	{
+		"idCategory" : 62,
+		"category" : "DECOLORANTE",
+		"codigo_base" : "901304004",
+		"siglas" : "CAPRTIDE",
+		"parent_id" : 58
+	},
+	{
+		"idCategory" : 63,
+		"category" : "FANTASÍA",
+		"codigo_base" : "901304005",
+		"siglas" : "CAPRTIFA",
+		"parent_id" : 58
+	},
+	{
+		"idCategory" : 64,
+		"category" : "OXIGENTA",
+		"codigo_base" : "901304006",
+		"siglas" : "CAPRTIOX",
+		"parent_id" : 58
+	},
+	{
+		"idCategory" : 65,
+		"category" : "MATIZANTE",
+		"codigo_base" : "901304007",
+		"siglas" : "CAPRTIMA",
+		"parent_id" : 58
+	},
+	{
+		"idCategory" : 66,
+		"category" : "TRATAMIENTO",
+		"codigo_base" : "901305",
+		"siglas" : "CAPRTR",
+		"parent_id" : 43
+	},
+	{
+		"idCategory" : 67,
+		"category" : "CUBRIMIENTO",
+		"codigo_base" : "901305001",
+		"siglas" : "CAPRTRCU",
+		"parent_id" : 66
+	},
+	{
+		"idCategory" : 68,
+		"category" : "HIDRATACION",
+		"codigo_base" : "901305002",
+		"siglas" : "CAPRTRHI",
+		"parent_id" : 66
+	},
+	{
+		"idCategory" : 69,
+		"category" : "MATIZANTE",
+		"codigo_base" : "901305003",
+		"siglas" : "CAPRTRMA",
+		"parent_id" : 66
+	},
+	{
+		"idCategory" : 70,
+		"category" : "NUTRICION",
+		"codigo_base" : "901305004",
+		"siglas" : "CAPRTRNU",
+		"parent_id" : 66
+	},
+	{
+		"idCategory" : 71,
+		"category" : "REPARACION",
+		"codigo_base" : "901305005",
+		"siglas" : "CAPRTRRE",
+		"parent_id" : 66
+	},
+	{
+		"idCategory" : 72,
+		"category" : "CORPORAL",
+		"codigo_base" : "902",
+		"siglas" : "CO",
+		"parent_id" : null
+	},
+	{
+		"idCategory" : 73,
+		"category" : "ACCESORIOS",
+		"codigo_base" : "9021",
+		"siglas" : "COAC",
+		"parent_id" : 72
+	},
+	{
+		"idCategory" : 74,
+		"category" : "DECORACION",
+		"codigo_base" : "902101",
+		"siglas" : "COACDE",
+		"parent_id" : 73
+	},
+	{
+		"idCategory" : 75,
+		"category" : "CUELLO",
+		"codigo_base" : "902101001",
+		"siglas" : "COACDECU",
+		"parent_id" : 74
+	},
+	{
+		"idCategory" : 76,
+		"category" : "HERRAMIENTAS",
+		"codigo_base" : "9022",
+		"siglas" : "COHE",
+		"parent_id" : 72
+	},
+	{
+		"idCategory" : 77,
+		"category" : "HIGIENE",
+		"codigo_base" : "902201",
+		"siglas" : "COHEHI",
+		"parent_id" : 76
+	},
+	{
+		"idCategory" : 78,
+		"category" : "ALGODÓN",
+		"codigo_base" : "902201001",
+		"siglas" : "COHEHIAL",
+		"parent_id" : 77
+	},
+	{
+		"idCategory" : 79,
+		"category" : "COTONETE",
+		"codigo_base" : "902201002",
+		"siglas" : "COHEHICO",
+		"parent_id" : 77
+	},
+	{
+		"idCategory" : 80,
+		"category" : "DEPILACIÓN",
+		"codigo_base" : "902201003",
+		"siglas" : "COHEHIDE",
+		"parent_id" : 77
+	},
+	{
+		"idCategory" : 81,
+		"category" : "MQ MÁQUINA",
+		"codigo_base" : "902202",
+		"siglas" : "COHEMQ",
+		"parent_id" : 76
+	},
+	{
+		"idCategory" : 82,
+		"category" : "DEPILACIÓN",
+		"codigo_base" : "902202001",
+		"siglas" : "COHEMQDE",
+		"parent_id" : 81
+	},
+	{
+		"idCategory" : 83,
+		"category" : "MASAJE",
+		"codigo_base" : "902202002",
+		"siglas" : "COHEMQMA",
+		"parent_id" : 81
+	},
+	{
+		"idCategory" : 84,
+		"category" : "PRODUCTO",
+		"codigo_base" : "9023",
+		"siglas" : "COPR",
+		"parent_id" : 72
+	},
+	{
+		"idCategory" : 85,
+		"category" : "HIGIENE",
+		"codigo_base" : "902301",
+		"siglas" : "COPRHI",
+		"parent_id" : 84
+	},
+	{
+		"idCategory" : 86,
+		"category" : "ALCOHOL",
+		"codigo_base" : "902301001",
+		"siglas" : "COPRHIAL",
+		"parent_id" : 85
+	},
+	{
+		"idCategory" : 87,
+		"category" : "CREMA",
+		"codigo_base" : "902301002",
+		"siglas" : "COPRHICR",
+		"parent_id" : 85
+	},
+	{
+		"idCategory" : 88,
+		"category" : "DEPILACIÓN",
+		"codigo_base" : "902301003",
+		"siglas" : "COPRHIDE",
+		"parent_id" : 85
+	},
+	{
+		"idCategory" : 89,
+		"category" : "GEL",
+		"codigo_base" : "902301004",
+		"siglas" : "COPRHIGE",
+		"parent_id" : 85
+	},
+	{
+		"idCategory" : 90,
+		"category" : "JABÓN",
+		"codigo_base" : "902301005",
+		"siglas" : "COPRHIJA",
+		"parent_id" : 85
+	},
+	{
+		"idCategory" : 91,
+		"category" : "PERFUME",
+		"codigo_base" : "902301006",
+		"siglas" : "COPRHIPE",
+		"parent_id" : 85
+	},
+	{
+		"idCategory" : 92,
+		"category" : "SPLASH",
+		"codigo_base" : "902301007",
+		"siglas" : "COPRHISP",
+		"parent_id" : 85
+	},
+	{
+		"idCategory" : 93,
+		"category" : "TRANSPIRACIÓN",
+		"codigo_base" : "902301008",
+		"siglas" : "COPRHITR",
+		"parent_id" : 85
+	},
+	{
+		"idCategory" : 94,
+		"category" : "TRATAMIENTO",
+		"codigo_base" : "902302",
+		"siglas" : "COPRTR",
+		"parent_id" : 84
+	},
+	{
+		"idCategory" : 95,
+		"category" : "EXFOLIANTE",
+		"codigo_base" : "902302001",
+		"siglas" : "COPRTREX",
+		"parent_id" : 94
+	},
+	{
+		"idCategory" : 96,
+		"category" : "HIDRATACIÓN",
+		"codigo_base" : "902302002",
+		"siglas" : "COPRTRHI",
+		"parent_id" : 94
+	},
+	{
+		"idCategory" : 97,
+		"category" : "NUTRICIÓN",
+		"codigo_base" : "902302003",
+		"siglas" : "COPRTRNU",
+		"parent_id" : 94
+	},
+	{
+		"idCategory" : 98,
+		"category" : "FACIAL",
+		"codigo_base" : "903",
+		"siglas" : "FA",
+		"parent_id" : null
+	},
+	{
+		"idCategory" : 134,
+		"category" : "LABIOS",
+		"codigo_base" : "904",
+		"siglas" : "LA",
+		"parent_id" : null
+	},
+	{
+		"idCategory" : 148,
+		"category" : "MANOS",
+		"codigo_base" : "905",
+		"siglas" : "MA",
+		"parent_id" : null
+	},
+	{
+		"idCategory" : 149,
+		"category" : "ACCESORIOS",
+		"codigo_base" : "9051",
+		"siglas" : "MAAC",
+		"parent_id" : 148
+	},
+	{
+		"idCategory" : 150,
+		"category" : "HERRAMIENTAS",
+		"codigo_base" : "9052",
+		"siglas" : "MAHE",
+		"parent_id" : 148
+	},
+	{
+		"idCategory" : 151,
+		"category" : "PRODUCTO",
+		"codigo_base" : "9053",
+		"siglas" : "MAPR",
+		"parent_id" : 148
+	},
+	{
+		"idCategory" : 152,
+		"category" : "TRATAMIENTO",
+		"codigo_base" : "905301",
+		"siglas" : "MAPRTR",
+		"parent_id" : 151
+	},
+	{
+		"idCategory" : 153,
+		"category" : "ACLARANTE",
+		"codigo_base" : "905301001",
+		"siglas" : "MAPRTRAC",
+		"parent_id" : 152
+	},
+	{
+		"idCategory" : 154,
+		"category" : "HIDRATACION",
+		"codigo_base" : "905301002",
+		"siglas" : "MAPRTRHI",
+		"parent_id" : 152
+	},
+	{
+		"idCategory" : 156,
+		"category" : "ACCESORIOS",
+		"codigo_base" : "9031",
+		"siglas" : "FAAC",
+		"parent_id" : 98
+	},
+	{
+		"idCategory" : 157,
+		"category" : "HERRAMIENTAS",
+		"codigo_base" : "9032",
+		"siglas" : "FAHE",
+		"parent_id" : 98
+	},
+	{
+		"idCategory" : 158,
+		"category" : "PRODUCTO",
+		"codigo_base" : "9033",
+		"siglas" : "FAPR",
+		"parent_id" : 98
+	},
+	{
+		"idCategory" : 159,
+		"category" : "HIGIENE",
+		"codigo_base" : "903201",
+		"siglas" : "FAHEHI",
+		"parent_id" : 157
+	},
+	{
+		"idCategory" : 160,
+		"category" : "EXFOLIANTE",
+		"codigo_base" : "903201001",
+		"siglas" : "FAHEHIEX",
+		"parent_id" : 159
+	},
+	{
+		"idCategory" : 161,
+		"category" : "PAÑO",
+		"codigo_base" : "903201002",
+		"siglas" : "FAHEHIPA",
+		"parent_id" : 159
+	},
+	{
+		"idCategory" : 162,
+		"category" : "MAQUILLAJE",
+		"codigo_base" : "903202",
+		"siglas" : "FAHEMA",
+		"parent_id" : 157
+	},
+	{
+		"idCategory" : 163,
+		"category" : "BLENDER",
+		"codigo_base" : "903202001",
+		"siglas" : "FAHEMABL",
+		"parent_id" : 162
+	},
+	{
+		"idCategory" : 164,
+		"category" : "BROCHA",
+		"codigo_base" : "903202002",
+		"siglas" : "FAHEMABR",
+		"parent_id" : 162
+	},
+	{
+		"idCategory" : 165,
+		"category" : "ESPONJA",
+		"codigo_base" : "903202003",
+		"siglas" : "FAHEMAES",
+		"parent_id" : 162
+	},
+	{
+		"idCategory" : 166,
+		"category" : "TOALLA",
+		"codigo_base" : "903202004",
+		"siglas" : "FAHEMATO",
+		"parent_id" : 162
+	},
+	{
+		"idCategory" : 167,
+		"category" : "MQ MÁQUINA",
+		"codigo_base" : "903203",
+		"siglas" : "FAHEMQ",
+		"parent_id" : 157
+	},
+	{
+		"idCategory" : 168,
+		"category" : "EXFOLIANTE",
+		"codigo_base" : "903203001",
+		"siglas" : "FAHEMQEX",
+		"parent_id" : 167
+	},
+	{
+		"idCategory" : 169,
+		"category" : "MASAJE",
+		"codigo_base" : "903203002",
+		"siglas" : "FAHEMQMA",
+		"parent_id" : 167
+	},
+	{
+		"idCategory" : 170,
+		"category" : "HIGIENE",
+		"codigo_base" : "903301",
+		"siglas" : "FAPRHI",
+		"parent_id" : 158
+	},
+	{
+		"idCategory" : 171,
+		"category" : "ESPUMA",
+		"codigo_base" : "903301001",
+		"siglas" : "FAPRHIES",
+		"parent_id" : 170
+	},
+	{
+		"idCategory" : 172,
+		"category" : "GEL",
+		"codigo_base" : "903301002",
+		"siglas" : "FAPRHIGE",
+		"parent_id" : 170
+	},
+	{
+		"idCategory" : 173,
+		"category" : "JABÓN",
+		"codigo_base" : "903301003",
+		"siglas" : "FAPRHIJA",
+		"parent_id" : 170
+	},
+	{
+		"idCategory" : 174,
+		"category" : "MAQUILLAJE",
+		"codigo_base" : "903302",
+		"siglas" : "FAPRMA",
+		"parent_id" : 158
+	},
+	{
+		"idCategory" : 175,
+		"category" : "TRATAMIENTO",
+		"codigo_base" : "903303",
+		"siglas" : "FAPRTR",
+		"parent_id" : 158
+	},
+	{
+		"idCategory" : 176,
+		"category" : "BASE",
+		"codigo_base" : "903302001",
+		"siglas" : "FAPRMABA",
+		"parent_id" : 174
+	},
+	{
+		"idCategory" : 177,
+		"category" : "CONTORNO",
+		"codigo_base" : "903302002",
+		"siglas" : "FAPRMACO",
+		"parent_id" : 174
+	},
+	{
+		"idCategory" : 178,
+		"category" : "CR CORRECTOR",
+		"codigo_base" : "903302003",
+		"siglas" : "FAPRMACR",
+		"parent_id" : 174
+	},
+	{
+		"idCategory" : 179,
+		"category" : "ILUMINADOR",
+		"codigo_base" : "903302004",
+		"siglas" : "FAPRMAIL",
+		"parent_id" : 174
+	},
+	{
+		"idCategory" : 180,
+		"category" : "PINTURA",
+		"codigo_base" : "903302005",
+		"siglas" : "FAPRMAPI",
+		"parent_id" : 174
+	},
+	{
+		"idCategory" : 181,
+		"category" : "POLVO",
+		"codigo_base" : "903302006",
+		"siglas" : "FAPRMAPO",
+		"parent_id" : 174
+	},
+	{
+		"idCategory" : 182,
+		"category" : "PRIMER",
+		"codigo_base" : "903302007",
+		"siglas" : "FAPRMAPR",
+		"parent_id" : 174
+	},
+	{
+		"idCategory" : 183,
+		"category" : "RUBOR",
+		"codigo_base" : "903302008",
+		"siglas" : "FAPRMARU",
+		"parent_id" : 174
+	},
+	{
+		"idCategory" : 184,
+		"category" : "SELLADOR",
+		"codigo_base" : "903302009",
+		"siglas" : "FAPRMASE",
+		"parent_id" : 174
+	},
+	{
+		"idCategory" : 185,
+		"category" : "ACLARANTE",
+		"codigo_base" : "903303001",
+		"siglas" : "FAPRTRAC",
+		"parent_id" : 175
+	},
+	{
+		"idCategory" : 186,
+		"category" : "DESMAQUILLANTE",
+		"codigo_base" : "903303002",
+		"siglas" : "FAPRTRDE",
+		"parent_id" : 175
+	},
+	{
+		"idCategory" : 187,
+		"category" : "EXFOLIANTE",
+		"codigo_base" : "903303003",
+		"siglas" : "FAPRTREX",
+		"parent_id" : 175
+	},
+	{
+		"idCategory" : 188,
+		"category" : "HIDRATACION",
+		"codigo_base" : "903303004",
+		"siglas" : "FAPRTRHI",
+		"parent_id" : 175
+	},
+	{
+		"idCategory" : 189,
+		"category" : "MASCARILLA",
+		"codigo_base" : "903303005",
+		"siglas" : "FAPRTRMA",
+		"parent_id" : 175
+	},
+	{
+		"idCategory" : 190,
+		"category" : "NUTRICION",
+		"codigo_base" : "903303006",
+		"siglas" : "FAPRTRNU",
+		"parent_id" : 175
+	},
+	{
+		"idCategory" : 191,
+		"category" : "PROTECTOR",
+		"codigo_base" : "903303007",
+		"siglas" : "FAPRTRPR",
+		"parent_id" : 175
+	},
+	{
+		"idCategory" : 192,
+		"category" : "OJOS",
+		"codigo_base" : "906",
+		"siglas" : "OJ",
+		"parent_id" : null
+	},
+	{
+		"idCategory" : 193,
+		"category" : "ACCESORIOS",
+		"codigo_base" : "9061",
+		"siglas" : "OJAC",
+		"parent_id" : 192
+	},
+	{
+		"idCategory" : 194,
+		"category" : "HERRAMIENTAS",
+		"codigo_base" : "9062",
+		"siglas" : "OJHE",
+		"parent_id" : 192
+	},
+	{
+		"idCategory" : 195,
+		"category" : "PRODUCTO",
+		"codigo_base" : "9063",
+		"siglas" : "OJPR",
+		"parent_id" : 192
+	},
+	{
+		"idCategory" : 196,
+		"category" : "DECORACION",
+		"codigo_base" : "906101",
+		"siglas" : "OJACDE",
+		"parent_id" : 193
+	},
+	{
+		"idCategory" : 197,
+		"category" : "ESCARCHA",
+		"codigo_base" : "906101001",
+		"siglas" : "OJACDEES",
+		"parent_id" : 196
+	},
+	{
+		"idCategory" : 198,
+		"category" : "PEGAMENTO",
+		"codigo_base" : "906101002",
+		"siglas" : "OJACDEPE",
+		"parent_id" : 196
+	},
+	{
+		"idCategory" : 199,
+		"category" : "PS PESTAÑAS",
+		"codigo_base" : "906101003",
+		"siglas" : "OJACDEPS",
+		"parent_id" : 196
+	},
+	{
+		"idCategory" : 200,
+		"category" : "HIGIENE",
+		"codigo_base" : "906201",
+		"siglas" : "OJHEHI",
+		"parent_id" : 194
+	},
+	{
+		"idCategory" : 201,
+		"category" : "NAVAJA",
+		"codigo_base" : "906201001",
+		"siglas" : "OJHEHINA",
+		"parent_id" : 200
+	},
+	{
+		"idCategory" : 202,
+		"category" : "PINZA",
+		"codigo_base" : "906201002",
+		"siglas" : "OJHEHIPI",
+		"parent_id" : 200
+	},
+	{
+		"idCategory" : 203,
+		"category" : "MAQUILLAJE",
+		"codigo_base" : "906202",
+		"siglas" : "OJHEMA",
+		"parent_id" : 194
+	},
+	{
+		"idCategory" : 204,
+		"category" : "BROCHA",
+		"codigo_base" : "906202001",
+		"siglas" : "OJHEMABR",
+		"parent_id" : 203
+	},
+	{
+		"idCategory" : 205,
+		"category" : "RIZADOR",
+		"codigo_base" : "906202002",
+		"siglas" : "OJHEMARI",
+		"parent_id" : 203
+	},
+	{
+		"idCategory" : 206,
+		"category" : "MAPPING",
+		"codigo_base" : "906202003",
+		"siglas" : "OJHEMAMA",
+		"parent_id" : 203
+	},
+	{
+		"idCategory" : 207,
+		"category" : "APLICADOR",
+		"codigo_base" : "906202004",
+		"siglas" : "OJHEMAAP",
+		"parent_id" : 203
+	},
+	{
+		"idCategory" : 208,
+		"category" : "CEPILLO",
+		"codigo_base" : "906202005",
+		"siglas" : "OJHEMACE",
+		"parent_id" : 203
+	},
+	{
+		"idCategory" : 209,
+		"category" : "COMPÁS",
+		"codigo_base" : "906202006",
+		"siglas" : "OJHEMACO",
+		"parent_id" : 203
+	},
+	{
+		"idCategory" : 210,
+		"category" : "CINTA",
+		"codigo_base" : "906202007",
+		"siglas" : "OJHEMACI",
+		"parent_id" : 203
+	},
+	{
+		"idCategory" : 211,
+		"category" : "MQ MÁQUINA",
+		"codigo_base" : "906203",
+		"siglas" : "OJHEMQ",
+		"parent_id" : 194
+	},
+	{
+		"idCategory" : 212,
+		"category" : "PERFILADOR",
+		"codigo_base" : "906203001",
+		"siglas" : "OJHEMQPE",
+		"parent_id" : 211
+	},
+	{
+		"idCategory" : 213,
+		"category" : "HIGIENE",
+		"codigo_base" : "906301",
+		"siglas" : "OJPRHI",
+		"parent_id" : 195
+	},
+	{
+		"idCategory" : 214,
+		"category" : "JABÓN",
+		"codigo_base" : "906301001",
+		"siglas" : "OJPRHIJA",
+		"parent_id" : 213
+	},
+	{
+		"idCategory" : 215,
+		"category" : "REMOVEDOR",
+		"codigo_base" : "906301002",
+		"siglas" : "OJPRHIRE",
+		"parent_id" : 213
+	},
+	{
+		"idCategory" : 216,
+		"category" : "MAQUILLAJE",
+		"codigo_base" : "906302",
+		"siglas" : "OJPRMA",
+		"parent_id" : 195
+	},
+	{
+		"idCategory" : 217,
+		"category" : "BETUM",
+		"codigo_base" : "906302001",
+		"siglas" : "OJPRMABE",
+		"parent_id" : 216
+	},
+	{
+		"idCategory" : 218,
+		"category" : "CORRECTOR",
+		"codigo_base" : "906302002",
+		"siglas" : "OJPRMACO",
+		"parent_id" : 216
+	},
+	{
+		"idCategory" : 219,
+		"category" : "DELINEADOR",
+		"codigo_base" : "906302003",
+		"siglas" : "OJPRMADE",
+		"parent_id" : 216
+	},
+	{
+		"idCategory" : 220,
+		"category" : "GEL",
+		"codigo_base" : "906302004",
+		"siglas" : "OJPRMAGE",
+		"parent_id" : 216
+	},
+	{
+		"idCategory" : 221,
+		"category" : "GLITTER",
+		"codigo_base" : "906302005",
+		"siglas" : "OJPRMAGL",
+		"parent_id" : 216
+	},
+	{
+		"idCategory" : 222,
+		"category" : "ILUMINADOR",
+		"codigo_base" : "906302006",
+		"siglas" : "OJPRMAIL",
+		"parent_id" : 216
+	},
+	{
+		"idCategory" : 223,
+		"category" : "NEÓN",
+		"codigo_base" : "906302007",
+		"siglas" : "OJPRMANE",
+		"parent_id" : 216
+	},
+	{
+		"idCategory" : 224,
+		"category" : "PRIMER",
+		"codigo_base" : "906302008",
+		"siglas" : "OJPRMAPR",
+		"parent_id" : 216
+	},
+	{
+		"idCategory" : 225,
+		"category" : "RIMEL",
+		"codigo_base" : "906302009",
+		"siglas" : "OJPRMARI",
+		"parent_id" : 216
+	},
+	{
+		"idCategory" : 226,
+		"category" : "ROTULADOR",
+		"codigo_base" : "906302010",
+		"siglas" : "OJPRMARO",
+		"parent_id" : 216
+	},
+	{
+		"idCategory" : 227,
+		"category" : "SOMBRA",
+		"codigo_base" : "906302011",
+		"siglas" : "OJPRMASO",
+		"parent_id" : 216
+	},
+	{
+		"idCategory" : 228,
+		"category" : "TRATAMIENTO",
+		"codigo_base" : "906303",
+		"siglas" : "OJPRTR",
+		"parent_id" : 195
+	},
+	{
+		"idCategory" : 229,
+		"category" : "DESMAQUILLANTE",
+		"codigo_base" : "906303001",
+		"siglas" : "OJPRTRDE",
+		"parent_id" : 228
+	},
+	{
+		"idCategory" : 230,
+		"category" : "HIDRATACION",
+		"codigo_base" : "906303002",
+		"siglas" : "OJPRTRHI",
+		"parent_id" : 228
+	},
+	{
+		"idCategory" : 231,
+		"category" : "CIRUJIA",
+		"codigo_base" : "906304",
+		"siglas" : "OJPRCI",
+		"parent_id" : 195
+	},
+	{
+		"idCategory" : 232,
+		"category" : "PERMANENTE",
+		"codigo_base" : "906304001",
+		"siglas" : "OJPRCIPE",
+		"parent_id" : 231
+	},
+	{
+		"idCategory" : 233,
+		"category" : "PIES",
+		"codigo_base" : "907",
+		"siglas" : "PI",
+		"parent_id" : null
+	},
+	{
+		"idCategory" : 234,
+		"category" : "ACCESORIOS",
+		"codigo_base" : "9071",
+		"siglas" : "PIAC",
+		"parent_id" : 233
+	},
+	{
+		"idCategory" : 235,
+		"category" : "HERRAMIENTAS",
+		"codigo_base" : "9072",
+		"siglas" : "PIHE",
+		"parent_id" : 233
+	},
+	{
+		"idCategory" : 236,
+		"category" : "PRODUCTO",
+		"codigo_base" : "9073",
+		"siglas" : "PIPR",
+		"parent_id" : 233
+	},
+	{
+		"idCategory" : 237,
+		"category" : "HIGIENE",
+		"codigo_base" : "907201",
+		"siglas" : "PIHEHI",
+		"parent_id" : 235
+	},
+	{
+		"idCategory" : 238,
+		"category" : "CEPILLO",
+		"codigo_base" : "907201001",
+		"siglas" : "PIHEHICE",
+		"parent_id" : 237
+	},
+	{
+		"idCategory" : 239,
+		"category" : "CORTADOR",
+		"codigo_base" : "907201002",
+		"siglas" : "PIHEHICO",
+		"parent_id" : 237
+	},
+	{
+		"idCategory" : 240,
+		"category" : "EXFOLIANTE",
+		"codigo_base" : "907201003",
+		"siglas" : "PIHEHIEX",
+		"parent_id" : 237
+	},
+	{
+		"idCategory" : 241,
+		"category" : "PEDICURE",
+		"codigo_base" : "907201004",
+		"siglas" : "PIHEHIPE",
+		"parent_id" : 237
+	},
+	{
+		"idCategory" : 242,
+		"category" : "MASAJE",
+		"codigo_base" : "907201005",
+		"siglas" : "PIHEHIMA",
+		"parent_id" : 237
+	},
+	{
+		"idCategory" : 243,
+		"category" : "TRATAMIENTO",
+		"codigo_base" : "907301",
+		"siglas" : "PIPRTR",
+		"parent_id" : 236
+	},
+	{
+		"idCategory" : 244,
+		"category" : "ACLARANTE",
+		"codigo_base" : "907301001",
+		"siglas" : "PIPRTRAC",
+		"parent_id" : 243
+	},
+	{
+		"idCategory" : 245,
+		"category" : "EXFOLIANTE",
+		"codigo_base" : "907301002",
+		"siglas" : "PIPRTREX",
+		"parent_id" : 243
+	},
+	{
+		"idCategory" : 246,
+		"category" : "HIDRATACION",
+		"codigo_base" : "907301003",
+		"siglas" : "PIPRTRHI",
+		"parent_id" : 243
+	},
+	{
+		"idCategory" : 247,
+		"category" : "UÑAS",
+		"codigo_base" : "908",
+		"siglas" : "UÑ",
+		"parent_id" : null
+	},
+	{
+		"idCategory" : 248,
+		"category" : "ACCESORIOS",
+		"codigo_base" : "9081",
+		"siglas" : "UÑAC",
+		"parent_id" : 247
+	},
+	{
+		"idCategory" : 249,
+		"category" : "HERRAMIENTAS",
+		"codigo_base" : "9082",
+		"siglas" : "UÑHE",
+		"parent_id" : 247
+	},
+	{
+		"idCategory" : 250,
+		"category" : "PRODUCTO",
+		"codigo_base" : "9083",
+		"siglas" : "UÑPR",
+		"parent_id" : 247
+	},
+	{
+		"idCategory" : 251,
+		"category" : "DECORACION",
+		"codigo_base" : "908101",
+		"siglas" : "UÑACDE",
+		"parent_id" : 248
+	},
+	{
+		"idCategory" : 252,
+		"category" : "ADHESIVO",
+		"codigo_base" : "908101001",
+		"siglas" : "UÑACDEAD",
+		"parent_id" : 251
+	},
+	{
+		"idCategory" : 253,
+		"category" : "CONFETTI",
+		"codigo_base" : "908101002",
+		"siglas" : "UÑACDECO",
+		"parent_id" : 251
+	},
+	{
+		"idCategory" : 254,
+		"category" : "FOIL",
+		"codigo_base" : "908101003",
+		"siglas" : "UÑACDEFO",
+		"parent_id" : 251
+	},
+	{
+		"idCategory" : 255,
+		"category" : "NL NAIL",
+		"codigo_base" : "908101004",
+		"siglas" : "UÑACDENL",
+		"parent_id" : 251
+	},
+	{
+		"idCategory" : 256,
+		"category" : "NATURALEZA",
+		"codigo_base" : "908101005",
+		"siglas" : "UÑACDENA",
+		"parent_id" : 251
+	},
+	{
+		"idCategory" : 257,
+		"category" : "PIEDRA",
+		"codigo_base" : "908101006",
+		"siglas" : "UÑACDEPI",
+		"parent_id" : 251
+	},
+	{
+		"idCategory" : 258,
+		"category" : "TIPS",
+		"codigo_base" : "908101007",
+		"siglas" : "UÑACDETI",
+		"parent_id" : 251
+	},
+	{
+		"idCategory" : 259,
+		"category" : "DECORACION",
+		"codigo_base" : "908201",
+		"siglas" : "UÑHEDE",
+		"parent_id" : 249
+	},
+	{
+		"idCategory" : 260,
+		"category" : "ESMALTE",
+		"codigo_base" : "908202",
+		"siglas" : "UÑHEES",
+		"parent_id" : 249
+	},
+	{
+		"idCategory" : 261,
+		"category" : "HIGIENE",
+		"codigo_base" : "908203",
+		"siglas" : "UÑHEHI",
+		"parent_id" : 249
+	},
+	{
+		"idCategory" : 262,
+		"category" : "MQ MÁQUINA",
+		"codigo_base" : "908204",
+		"siglas" : "UÑHEMQ",
+		"parent_id" : 249
+	},
+	{
+		"idCategory" : 263,
+		"category" : "ACCESORIOS",
+		"codigo_base" : "908205",
+		"siglas" : "UÑHEAC",
+		"parent_id" : 249
+	},
+	{
+		"idCategory" : 264,
+		"category" : "PEGAMENTO",
+		"codigo_base" : "908201001",
+		"siglas" : "UÑHEDEPE",
+		"parent_id" : 259
+	},
+	{
+		"idCategory" : 265,
+		"category" : "PLACA",
+		"codigo_base" : "908201002",
+		"siglas" : "UÑHEDEPL",
+		"parent_id" : 259
+	},
+	{
+		"idCategory" : 266,
+		"category" : "PINCEL",
+		"codigo_base" : "908202001",
+		"siglas" : "UÑHEESPI",
+		"parent_id" : 260
+	},
+	{
+		"idCategory" : 267,
+		"category" : "PN PINZA",
+		"codigo_base" : "908202002",
+		"siglas" : "UÑHEESPN",
+		"parent_id" : 260
+	},
+	{
+		"idCategory" : 268,
+		"category" : "SELLO",
+		"codigo_base" : "908202003",
+		"siglas" : "UÑHEESSE",
+		"parent_id" : 260
+	},
+	{
+		"idCategory" : 277,
+		"category" : "LÁMPARA",
+		"codigo_base" : "908204001",
+		"siglas" : "UÑHEMQLÁ",
+		"parent_id" : 262
+	},
+	{
+		"idCategory" : 278,
+		"category" : "PULIDOR",
+		"codigo_base" : "908204002",
+		"siglas" : "UÑHEMQPU",
+		"parent_id" : 262
+	},
+	{
+		"idCategory" : 279,
+		"category" : "DRILL",
+		"codigo_base" : "908204003",
+		"siglas" : "UÑHEMQDR",
+		"parent_id" : 262
+	},
+	{
+		"idCategory" : 280,
+		"category" : "SECADORA",
+		"codigo_base" : "908204004",
+		"siglas" : "UÑHEMQSE",
+		"parent_id" : 262
+	},
+	{
+		"idCategory" : 281,
+		"category" : "IMPLEMENTOS",
+		"codigo_base" : "908205001",
+		"siglas" : "UÑHEACIM",
+		"parent_id" : 263
+	},
+	{
+		"idCategory" : 282,
+		"category" : "MPIGMENTACION",
+		"codigo_base" : "909",
+		"siglas" : "MP",
+		"parent_id" : null
+	},
+	{
+		"idCategory" : 283,
+		"category" : "ACCESORIOS",
+		"codigo_base" : "9091",
+		"siglas" : "MPAC",
+		"parent_id" : 282
+	},
+	{
+		"idCategory" : 284,
+		"category" : "HERRAMIENTAS",
+		"codigo_base" : "9092",
+		"siglas" : "MPHE",
+		"parent_id" : 282
+	},
+	{
+		"idCategory" : 285,
+		"category" : "PRODUCTO",
+		"codigo_base" : "9093",
+		"siglas" : "MPPR",
+		"parent_id" : 282
+	},
+	{
+		"idCategory" : 286,
+		"category" : "HIGIENE",
+		"codigo_base" : "909101",
+		"siglas" : "MPACHI",
+		"parent_id" : 283
+	},
+	{
+		"idCategory" : 287,
+		"category" : "CONFORT",
+		"codigo_base" : "909101001",
+		"siglas" : "MPACHICO",
+		"parent_id" : 286
+	},
+	{
+		"idCategory" : 288,
+		"category" : "DESECHABLES",
+		"codigo_base" : "909101002",
+		"siglas" : "MPACHIDE",
+		"parent_id" : 286
+	},
+	{
+		"idCategory" : 289,
+		"category" : "RECIPIENTE",
+		"codigo_base" : "909201",
+		"siglas" : "MPHERE",
+		"parent_id" : 284
+	},
+	{
+		"idCategory" : 290,
+		"category" : "MQ MÁQUINA",
+		"codigo_base" : "909202",
+		"siglas" : "MPHEMQ",
+		"parent_id" : 284
+	},
+	{
+		"idCategory" : 291,
+		"category" : "PRÁCTICA",
+		"codigo_base" : "909203",
+		"siglas" : "MPHEPR",
+		"parent_id" : 284
+	},
+	{
+		"idCategory" : 292,
+		"category" : "ORGANIZACIÓN",
+		"codigo_base" : "909204",
+		"siglas" : "MPHEOR",
+		"parent_id" : 284
+	},
+	{
+		"idCategory" : 293,
+		"category" : "TINTE",
+		"codigo_base" : "909205",
+		"siglas" : "MPHETI",
+		"parent_id" : 284
+	},
+	{
+		"idCategory" : 294,
+		"category" : "DISPENSADOR",
+		"codigo_base" : "909201001",
+		"siglas" : "MPHEREDI",
+		"parent_id" : 289
+	},
+	{
+		"idCategory" : 295,
+		"category" : "TINTA",
+		"codigo_base" : "909201002",
+		"siglas" : "MPHERETI",
+		"parent_id" : 289
+	},
+	{
+		"idCategory" : 296,
+		"category" : "BIO",
+		"codigo_base" : "909201003",
+		"siglas" : "MPHEREBI",
+		"parent_id" : 289
+	},
+	{
+		"idCategory" : 298,
+		"category" : "AGUJAS",
+		"codigo_base" : "909202001",
+		"siglas" : "MPHEMQAG",
+		"parent_id" : 290
+	},
+	{
+		"idCategory" : 299,
+		"category" : "ELÉCTRICA",
+		"codigo_base" : "909202002",
+		"siglas" : "MPHEMQEL",
+		"parent_id" : 290
+	},
+	{
+		"idCategory" : 300,
+		"category" : "INSTRUMENTO",
+		"codigo_base" : "909202003",
+		"siglas" : "MPHEMQIN",
+		"parent_id" : 290
+	},
+	{
+		"idCategory" : 301,
+		"category" : "CABEZA",
+		"codigo_base" : "909203001",
+		"siglas" : "MPHEPRCA",
+		"parent_id" : 291
+	},
+	{
+		"idCategory" : 302,
+		"category" : "PIEL",
+		"codigo_base" : "909203002",
+		"siglas" : "MPHEPRPI",
+		"parent_id" : 291
+	},
+	{
+		"idCategory" : 303,
+		"category" : "ALMACENAMIENTO",
+		"codigo_base" : "909204001",
+		"siglas" : "MPHEORAL",
+		"parent_id" : 292
+	},
+	{
+		"idCategory" : 304,
+		"category" : "HIGIENE",
+		"codigo_base" : "909205001",
+		"siglas" : "MPHETIHI",
+		"parent_id" : 293
+	},
+	{
+		"idCategory" : 305,
+		"category" : "ANESTESIA",
+		"codigo_base" : "909301",
+		"siglas" : "MPPRAN",
+		"parent_id" : 285
+	},
+	{
+		"idCategory" : 306,
+		"category" : "PIGMENTOS",
+		"codigo_base" : "909302",
+		"siglas" : "MPPRPI",
+		"parent_id" : 285
+	},
+	{
+		"idCategory" : 307,
+		"category" : "PARCHE",
+		"codigo_base" : "909301001",
+		"siglas" : "MPPRANPA",
+		"parent_id" : 305
+	},
+	{
+		"idCategory" : 308,
+		"category" : "CREMA",
+		"codigo_base" : "909301002",
+		"siglas" : "MPPRANCR",
+		"parent_id" : 305
+	},
+	{
+		"idCategory" : 309,
+		"category" : "GEL",
+		"codigo_base" : "909301003",
+		"siglas" : "MPPRANGE",
+		"parent_id" : 305
+	},
+	{
+		"idCategory" : 310,
+		"category" : "SPRAY",
+		"codigo_base" : "909301004",
+		"siglas" : "MPPRANSP",
+		"parent_id" : 305
+	},
+	{
+		"idCategory" : 311,
+		"category" : "INYECTABLE",
+		"codigo_base" : "909301005",
+		"siglas" : "MPPRANIN",
+		"parent_id" : 305
+	},
+	{
+		"idCategory" : 312,
+		"category" : "AGUJAS",
+		"codigo_base" : "909301006",
+		"siglas" : "MPPRANAG",
+		"parent_id" : 305
+	},
+	{
+		"idCategory" : 313,
+		"category" : "ESPUMA",
+		"codigo_base" : "909301007",
+		"siglas" : "MPPRANES",
+		"parent_id" : 305
+	},
+	{
+		"idCategory" : 314,
+		"category" : "TINTA",
+		"codigo_base" : "909302001",
+		"siglas" : "MPPRPITI",
+		"parent_id" : 306
+	},
+	{
+		"idCategory" : 315,
+		"category" : "DILUYENTE",
+		"codigo_base" : "909302002",
+		"siglas" : "MPPRPIDI",
+		"parent_id" : 306
+	},
+	{
+		"idCategory" : 316,
+		"category" : "HENNA",
+		"codigo_base" : "909302003",
+		"siglas" : "MPPRPIHE",
+		"parent_id" : 306
+	},
+	{
+		"idCategory" : 317,
+		"category" : "HOGAR",
+		"codigo_base" : "910",
+		"siglas" : "HO",
+		"parent_id" : null
+	},
+	{
+		"idCategory" : 318,
+		"category" : "ACCESORIOS",
+		"codigo_base" : "9101",
+		"siglas" : "HOAC",
+		"parent_id" : 317
+	},
+	{
+		"idCategory" : 319,
+		"category" : "HERRAMIENTAS",
+		"codigo_base" : "9102",
+		"siglas" : "HOHE",
+		"parent_id" : 317
+	},
+	{
+		"idCategory" : 320,
+		"category" : "PRODUCTO",
+		"codigo_base" : "9103",
+		"siglas" : "HOPR",
+		"parent_id" : 317
+	},
+	{
+		"idCategory" : 321,
+		"category" : "ORGANIZACIÓN",
+		"codigo_base" : "910101",
+		"siglas" : "HOACOR",
+		"parent_id" : 318
+	},
+	{
+		"idCategory" : 322,
+		"category" : "ALMACENAMIENTO",
+		"codigo_base" : "910101001",
+		"siglas" : "HOACORAL",
+		"parent_id" : 321
+	},
+	{
+		"idCategory" : 323,
+		"category" : "COSTURA",
+		"codigo_base" : "910101002",
+		"siglas" : "HOACORCO",
+		"parent_id" : 321
+	},
+	{
+		"idCategory" : 324,
+		"category" : "ILUMINACIÓN",
+		"codigo_base" : "910101003",
+		"siglas" : "HOACORIL",
+		"parent_id" : 321
+	},
+	{
+		"idCategory" : 325,
+		"category" : "VISIÓN",
+		"codigo_base" : "910101004",
+		"siglas" : "HOACORVI",
+		"parent_id" : 321
+	},
+	{
+		"idCategory" : 326,
+		"category" : "AMBIENTE",
+		"codigo_base" : "910101005",
+		"siglas" : "HOACORAM",
+		"parent_id" : 321
+	},
+	{
+		"idCategory" : 327,
+		"category" : "MQ MÁQUINA",
+		"codigo_base" : "910201",
+		"siglas" : "HOHEMQ",
+		"parent_id" : 319
+	},
+	{
+		"idCategory" : 328,
+		"category" : "AMBIENTE",
+		"codigo_base" : "910201001",
+		"siglas" : "HOHEMQAM",
+		"parent_id" : 327
+	},
+	{
+		"idCategory" : 329,
+		"category" : "SEXSHOP",
+		"codigo_base" : "911",
+		"siglas" : "SE",
+		"parent_id" : null
+	},
+	{
+		"idCategory" : 330,
+		"category" : "ACCESORIOS",
+		"codigo_base" : "9111",
+		"siglas" : "SEAC",
+		"parent_id" : 329
+	},
+	{
+		"idCategory" : 331,
+		"category" : "HERRAMIENTAS",
+		"codigo_base" : "9112",
+		"siglas" : "SEHE",
+		"parent_id" : 329
+	},
+	{
+		"idCategory" : 332,
+		"category" : "PRODUCTO",
+		"codigo_base" : "9113",
+		"siglas" : "SEPR",
+		"parent_id" : 329
+	},
+	{
+		"idCategory" : 333,
+		"category" : "VESTIMENTA",
+		"codigo_base" : "911101",
+		"siglas" : "SEACVE",
+		"parent_id" : 330
+	},
+	{
+		"idCategory" : 334,
+		"category" : "DISFRÁS",
+		"codigo_base" : "911101001",
+		"siglas" : "SEACVEDI",
+		"parent_id" : 333
+	},
+	{
+		"idCategory" : 335,
+		"category" : "JUGUETES",
+		"codigo_base" : "911201",
+		"siglas" : "SEHEJU",
+		"parent_id" : 331
+	},
+	{
+		"idCategory" : 336,
+		"category" : "MQ MÁQUINA",
+		"codigo_base" : "911202",
+		"siglas" : "SEHEMQ",
+		"parent_id" : 331
+	},
+	{
+		"idCategory" : 337,
+		"category" : "ANAL",
+		"codigo_base" : "911201001",
+		"siglas" : "SEHEJUAN",
+		"parent_id" : 335
+	},
+	{
+		"idCategory" : 338,
+		"category" : "DIVERSIÓN",
+		"codigo_base" : "911201002",
+		"siglas" : "SEHEJUDI",
+		"parent_id" : 335
+	},
+	{
+		"idCategory" : 339,
+		"category" : "VIBRADOR",
+		"codigo_base" : "911202001",
+		"siglas" : "SEHEMQVI",
+		"parent_id" : 336
+	},
+	{
+		"idCategory" : 340,
+		"category" : "ESTIMULANTE",
+		"codigo_base" : "911301",
+		"siglas" : "SEPRES",
+		"parent_id" : 332
+	},
+	{
+		"idCategory" : 341,
+		"category" : "HIGIENE",
+		"codigo_base" : "911302",
+		"siglas" : "SEPRHI",
+		"parent_id" : 332
+	},
+	{
+		"idCategory" : 342,
+		"category" : "PERFUME",
+		"codigo_base" : "911303",
+		"siglas" : "SEPRPE",
+		"parent_id" : 332
+	},
+	{
+		"idCategory" : 343,
+		"category" : "MAQUILLAJE",
+		"codigo_base" : "911304",
+		"siglas" : "SEPRMA",
+		"parent_id" : 332
+	},
+	{
+		"idCategory" : 344,
+		"category" : "AFRODISIACO",
+		"codigo_base" : "911301001",
+		"siglas" : "SEPRESAF",
+		"parent_id" : 340
+	},
+	{
+		"idCategory" : 345,
+		"category" : "MASAJE",
+		"codigo_base" : "911301002",
+		"siglas" : "SEPRESMA",
+		"parent_id" : 340
+	},
+	{
+		"idCategory" : 346,
+		"category" : "SUPLEMENTO",
+		"codigo_base" : "911301003",
+		"siglas" : "SEPRESSU",
+		"parent_id" : 340
+	},
+	{
+		"idCategory" : 347,
+		"category" : "JABÓN",
+		"codigo_base" : "911302001",
+		"siglas" : "SEPRHIJA",
+		"parent_id" : 341
+	},
+	{
+		"idCategory" : 348,
+		"category" : "SPLASH",
+		"codigo_base" : "911303001",
+		"siglas" : "SEPRPESP",
+		"parent_id" : 342
+	},
+	{
+		"idCategory" : 349,
+		"category" : "FEROMONAS",
+		"codigo_base" : "911303002",
+		"siglas" : "SEPRPEFE",
+		"parent_id" : 342
+	},
+	{
+		"idCategory" : 350,
+		"category" : "BRILLO",
+		"codigo_base" : "911304001",
+		"siglas" : "SEPRMABR",
+		"parent_id" : 343
+	},
+	{
+		"idCategory" : 351,
+		"category" : "ACCESORIOS",
+		"codigo_base" : "9041",
+		"siglas" : "LAAC",
+		"parent_id" : 134
+	},
+	{
+		"idCategory" : 352,
+		"category" : "HERRAMIENTAS",
+		"codigo_base" : "9042",
+		"siglas" : "LAHE",
+		"parent_id" : 134
+	},
+	{
+		"idCategory" : 353,
+		"category" : "PRODUCTO",
+		"codigo_base" : "9043",
+		"siglas" : "LAPR",
+		"parent_id" : 134
+	},
+	{
+		"idCategory" : 354,
+		"category" : "MAQUILLAJE",
+		"codigo_base" : "904301",
+		"siglas" : "LAPRMA",
+		"parent_id" : 353
+	},
+	{
+		"idCategory" : 355,
+		"category" : "TRATAMIENTO",
+		"codigo_base" : "904302",
+		"siglas" : "LAPRTR",
+		"parent_id" : 353
+	},
+	{
+		"idCategory" : 356,
+		"category" : "BALSAMO",
+		"codigo_base" : "904301001",
+		"siglas" : "LAPRMABA",
+		"parent_id" : 354
+	},
+	{
+		"idCategory" : 357,
+		"category" : "BRILLO",
+		"codigo_base" : "904301002",
+		"siglas" : "LAPRMABR",
+		"parent_id" : 354
+	},
+	{
+		"idCategory" : 358,
+		"category" : "GLOSS",
+		"codigo_base" : "904301003",
+		"siglas" : "LAPRMAGL",
+		"parent_id" : 354
+	},
+	{
+		"idCategory" : 359,
+		"category" : "LABIAL",
+		"codigo_base" : "904301004",
+		"siglas" : "LAPRMALA",
+		"parent_id" : 354
+	},
+	{
+		"idCategory" : 360,
+		"category" : "LP LAPIZ",
+		"codigo_base" : "904301005",
+		"siglas" : "LAPRMALP",
+		"parent_id" : 354
+	},
+	{
+		"idCategory" : 366,
+		"category" : "LL LIQUIDO",
+		"codigo_base" : "904301006",
+		"siglas" : "LAPRMALL",
+		"parent_id" : 354
+	},
+	{
+		"idCategory" : 367,
+		"category" : "LM MAGICO",
+		"codigo_base" : "904301007",
+		"siglas" : "LAPRMALM",
+		"parent_id" : 354
+	},
+	{
+		"idCategory" : 368,
+		"category" : "PRIMER",
+		"codigo_base" : "904301008",
+		"siglas" : "LAPRMAPR",
+		"parent_id" : 354
+	},
+	{
+		"idCategory" : 369,
+		"category" : "TINTA",
+		"codigo_base" : "904301009",
+		"siglas" : "LAPRMATI",
+		"parent_id" : 354
+	},
+	{
+		"idCategory" : 370,
+		"category" : "VASELINA",
+		"codigo_base" : "904301010",
+		"siglas" : "LAPRMAVA",
+		"parent_id" : 354
+	},
+	{
+		"idCategory" : 371,
+		"category" : "HIDRATACION",
+		"codigo_base" : "904302001",
+		"siglas" : "LAPRTRHI",
+		"parent_id" : 355
+	},
+	{
+		"idCategory" : 372,
+		"category" : "CEPILLO",
+		"codigo_base" : "908203001",
+		"siglas" : "UÑHEHICE",
+		"parent_id" : 261
+	},
+	{
+		"idCategory" : 373,
+		"category" : "CORTADOR",
+		"codigo_base" : "908203002",
+		"siglas" : "UÑHEHICO",
+		"parent_id" : 261
+	},
+	{
+		"idCategory" : 374,
+		"category" : "DISCO",
+		"codigo_base" : "908203003",
+		"siglas" : "UÑHEHIDI",
+		"parent_id" : 261
+	},
+	{
+		"idCategory" : 375,
+		"category" : "EMPUJADOR",
+		"codigo_base" : "908203004",
+		"siglas" : "UÑHEHIEM",
+		"parent_id" : 261
+	},
+	{
+		"idCategory" : 376,
+		"category" : "KIT",
+		"codigo_base" : "908203005",
+		"siglas" : "UÑHEHIKI",
+		"parent_id" : 261
+	},
+	{
+		"idCategory" : 377,
+		"category" : "LIMA",
+		"codigo_base" : "908203006",
+		"siglas" : "UÑHEHILI",
+		"parent_id" : 261
+	},
+	{
+		"idCategory" : 378,
+		"category" : "PULIDOR",
+		"codigo_base" : "908203007",
+		"siglas" : "UÑHEHIPU",
+		"parent_id" : 261
+	},
+	{
+		"idCategory" : 379,
+		"category" : "RECIPIENTE",
+		"codigo_base" : "908203008",
+		"siglas" : "UÑHEHIRE",
+		"parent_id" : 261
+	},
+	{
+		"idCategory" : 380,
+		"category" : "SEPARADOR",
+		"codigo_base" : "908203009",
+		"siglas" : "UÑHEHISE",
+		"parent_id" : 261
+	},
+	{
+		"idCategory" : 381,
+		"category" : "ACRILICO",
+		"codigo_base" : "908301",
+		"siglas" : "UÑPRAC",
+		"parent_id" : 250
+	},
+	{
+		"idCategory" : 382,
+		"category" : "BRILLO",
+		"codigo_base" : "908302",
+		"siglas" : "UÑPRBR",
+		"parent_id" : 250
+	},
+	{
+		"idCategory" : 383,
+		"category" : "ESMALTE",
+		"codigo_base" : "908303",
+		"siglas" : "UÑPRES",
+		"parent_id" : 250
+	},
+	{
+		"idCategory" : 384,
+		"category" : "TRATAMIENTO",
+		"codigo_base" : "908304",
+		"siglas" : "UÑPRTR",
+		"parent_id" : 250
+	},
+	{
+		"idCategory" : 385,
+		"category" : "BRILLO",
+		"codigo_base" : "908301001",
+		"siglas" : "UÑPRACBR",
+		"parent_id" : 381
+	},
+	{
+		"idCategory" : 386,
+		"category" : "FINISH",
+		"codigo_base" : "908301002",
+		"siglas" : "UÑPRACFI",
+		"parent_id" : 381
+	},
+	{
+		"idCategory" : 387,
+		"category" : "MONOMERO",
+		"codigo_base" : "908301003",
+		"siglas" : "UÑPRACMO",
+		"parent_id" : 381
+	},
+	{
+		"idCategory" : 388,
+		"category" : "PINTURA",
+		"codigo_base" : "908301004",
+		"siglas" : "UÑPRACPI",
+		"parent_id" : 381
+	},
+	{
+		"idCategory" : 389,
+		"category" : "POLVO",
+		"codigo_base" : "908301005",
+		"siglas" : "UÑPRACPO",
+		"parent_id" : 381
+	},
+	{
+		"idCategory" : 390,
+		"category" : "PRIMER",
+		"codigo_base" : "908301006",
+		"siglas" : "UÑPRACPR",
+		"parent_id" : 381
+	},
+	{
+		"idCategory" : 391,
+		"category" : "REMOVEDOR",
+		"codigo_base" : "908301007",
+		"siglas" : "UÑPRACRE",
+		"parent_id" : 381
+	},
+	{
+		"idCategory" : 392,
+		"category" : "TOPCOAT",
+		"codigo_base" : "908301008",
+		"siglas" : "UÑPRACTO",
+		"parent_id" : 381
+	},
+	{
+		"idCategory" : 393,
+		"category" : "GEL",
+		"codigo_base" : "908301009",
+		"siglas" : "UÑPRACGE",
+		"parent_id" : 381
+	},
+	{
+		"idCategory" : 394,
+		"category" : "GEL",
+		"codigo_base" : "908302001",
+		"siglas" : "UÑPRBRGE",
+		"parent_id" : 382
+	},
+	{
+		"idCategory" : 395,
+		"category" : "MATE",
+		"codigo_base" : "908302002",
+		"siglas" : "UÑPRBRMA",
+		"parent_id" : 382
+	},
+	{
+		"idCategory" : 396,
+		"category" : "NORMAL",
+		"codigo_base" : "908302003",
+		"siglas" : "UÑPRBRNO",
+		"parent_id" : 382
+	},
+	{
+		"idCategory" : 397,
+		"category" : "SECANTE",
+		"codigo_base" : "908302004",
+		"siglas" : "UÑPRBRSE",
+		"parent_id" : 382
+	},
+	{
+		"idCategory" : 398,
+		"category" : "DECORACION",
+		"codigo_base" : "908303001",
+		"siglas" : "UÑPRESDE",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 399,
+		"category" : "DISOLVENTE",
+		"codigo_base" : "908303002",
+		"siglas" : "UÑPRESDI",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 400,
+		"category" : "ESCARCHA",
+		"codigo_base" : "908303003",
+		"siglas" : "UÑPRESES",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 401,
+		"category" : "EP ESPEJO",
+		"codigo_base" : "908303004",
+		"siglas" : "UÑPRESEP",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 402,
+		"category" : "GEL",
+		"codigo_base" : "908303005",
+		"siglas" : "UÑPRESGE",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 403,
+		"category" : "GLITTER",
+		"codigo_base" : "908303006",
+		"siglas" : "UÑPRESGL",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 404,
+		"category" : "MATIZANTE",
+		"codigo_base" : "908303007",
+		"siglas" : "UÑPRESMA",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 405,
+		"category" : "METALICO",
+		"codigo_base" : "908303008",
+		"siglas" : "UÑPRESME",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 406,
+		"category" : "NEON",
+		"codigo_base" : "908303009",
+		"siglas" : "UÑPRESNE",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 407,
+		"category" : "NORMAL",
+		"codigo_base" : "908303010",
+		"siglas" : "UÑPRESNO",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 412,
+		"category" : "SATINADO",
+		"codigo_base" : "908303011",
+		"siglas" : "UÑPRESSA",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 413,
+		"category" : "SECANTE",
+		"codigo_base" : "908303012",
+		"siglas" : "UÑPRESSE",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 414,
+		"category" : "SOLVENTE",
+		"codigo_base" : "908303013",
+		"siglas" : "UÑPRESSO",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 415,
+		"category" : "RUBBER",
+		"codigo_base" : "908303014",
+		"siglas" : "UÑPRESRU",
+		"parent_id" : 383
+	},
+	{
+		"idCategory" : 416,
+		"category" : "ABLANDADOR",
+		"codigo_base" : "908304001",
+		"siglas" : "UÑPRTRAB",
+		"parent_id" : 384
+	},
+	{
+		"idCategory" : 417,
+		"category" : "CICATRIZANTE",
+		"codigo_base" : "908304002",
+		"siglas" : "UÑPRTRCI",
+		"parent_id" : 384
+	},
+	{
+		"idCategory" : 418,
+		"category" : "ENDURECEDOR",
+		"codigo_base" : "908304003",
+		"siglas" : "UÑPRTREN",
+		"parent_id" : 384
+	},
+	{
+		"idCategory" : 419,
+		"category" : "HIDRATACION",
+		"codigo_base" : "908304004",
+		"siglas" : "UÑPRTRHI",
+		"parent_id" : 384
+	},
+	{
+		"idCategory" : 420,
+		"category" : "NUTRICION",
+		"codigo_base" : "908304005",
+		"siglas" : "UÑPRTRNU",
+		"parent_id" : 384
+	},
+	{
+		"idCategory" : 421,
+		"category" : "PROTECTOR",
+		"codigo_base" : "908304006",
+		"siglas" : "UÑPRTRPR",
+		"parent_id" : 384
+	},
+	{
+		"idCategory" : 422,
+		"category" : "REMOVEDOR",
+		"codigo_base" : "908304007",
+		"siglas" : "UÑPRTRRE",
+		"parent_id" : 384
+	},
+	{
+		"idCategory" : 423,
+		"category" : "RP REPARACION",
+		"codigo_base" : "908304008",
+		"siglas" : "UÑPRTRRP",
+		"parent_id" : 384
+	}
+]}

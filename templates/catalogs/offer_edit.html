@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}{% block content %}
+<div class="container mt-4">
+    <h1>Editar Oferta</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ offer_form.as_p }}
+        {{ offer_detail_formset.management_form }}
+        {% for form in offer_detail_formset %}
+            {{ form.as_p }}
+        {% endfor %}
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+    <a href="{% url 'catalogs:offers_list' %}" class="btn btn-secondary mt-3">Volver a la lista de ofertas</a>
+</div>
+{% endblock %}

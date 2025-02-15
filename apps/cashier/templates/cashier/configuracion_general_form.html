@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block breadcrumb %}
+    {% for item in breadcrumb %}
+        <li class="breadcrumb-item"><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endfor %}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1>Configuración General</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+</div>
+{% endblock %}
+

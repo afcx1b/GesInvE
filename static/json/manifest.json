@@ -1,0 +1,21 @@
+{
+    "short_name": "GESINV",
+    "name": "Sistema de Gestión de Inventario",
+    "icons": [
+      {
+        "src": "/static/icon/inventario192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/static/icon/inventario512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#007bff"
+  }

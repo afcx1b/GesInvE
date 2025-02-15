@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block content %}
+  <h2>Editar Orden</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-warning">Actualizar Orden</button>
+  </form>
+  <a href="{% url 'catalogs:orders_list' %}" class="btn btn-secondary mt-3">Cancelar</a>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block breadcrumb %}
+    {% for item in breadcrumb %}
+        <li class="breadcrumb-item"><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endfor %}
+{% endblock %}
+
+{% block content %}
+<h2>Exportar Datos</h2>
+<form method="post">
+    {% csrf_token %}
+    <label>Selecciona una aplicación:</label>
+    <select name="app_label">
+        <option value="brands">Marcas</option>
+        <option value="cashier">Caja</option>
+        <option value="catalogs">Catálogos</option>
+        <option value="products">Productos</option>
+        <option value="categories">Categorías</option>
+        <option value="users">Usuarios</option>
+        <!-- Agregar más aplicaciones -->
+    </select>
+    <label>Selecciona una tabla:</label>
+    <select name="table">
+        <option value="all">Todas</option>
+        <option value="Product">Productos</option>
+        <option value="Category">Categorías</option>
+        <option value="Brand">Marcas</option>
+        <option value="Customer">Clientes</option>
+        <!-- Agregar más tablas -->
+    </select>
+    <label>Formato:</label>
+    <select name="format">
+        <option value="xlsx">Excel</option>
+        <option value="csv">CSV</option>
+    </select>
+    <button type="submit">Exportar</button>
+</form>
+{% endblock %}

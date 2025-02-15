@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+{% block title %}Reporte de Comisiones{% endblock %}
+
+{% block content %}
+<h2>Reporte de Comisiones</h2>
+<form method="get">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Filtrar</button>
+</form>
+
+<h3 class="mt-4">Comisiones</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Vendedor</th>
+            <th>Porcentaje</th>
+            <th>Fecha Inicio</th>
+            <th>Fecha Fin</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for comision in comisiones %}
+        <tr>
+            <td>{{ comision.vendedor.username }}</td>
+            <td>{{ comision.porcentaje_comision }}%</td>
+            <td>{{ comision.fecha_inicio }}</td>
+            <td>{{ comision.fecha_fin }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<p><strong>Total Comisiones:</strong> {{ total_comisiones }}%</p>
+{% endblock %}

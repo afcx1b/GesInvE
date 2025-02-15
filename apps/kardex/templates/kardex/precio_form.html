@@ -1,0 +1,125 @@
+{% extends 'layout.html' %}
+{% block breadcrumb %}
+    {% for item in breadcrumb %}
+        <li class="breadcrumb-item"><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endfor %}
+{% endblock %}
+  
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <!-- Sección izquierda: Formulario --> 
+        <div class="col-md-4">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-primary text-white text-center">
+                    <h5 class="mb-0">
+                        <i class="fas fa-dollar-sign"></i>  
+                        {% if object %}Editar{% else %} Nuevo{% endif %} Precio
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <form id="precioForm" method="post" action="{% url 'kardex:precio_form_view' %}">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Producto</label>
+                            {{ form.producto }}
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Precio</label>
+                            {{ form.precio }}
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Fecha</label>
+                            {{ form.fecha }}
+                        </div>
+                    
+                        <button type="submit" class="btn btn-success w-100">
+                            <i class="fas fa-save"></i>  
+                            {% if object %}Actualizar{% else %} Guardar{% endif %}
+                        </button>
+                        <a href="{% url 'kardex:precio_list' %}" class="btn btn-secondary w-100 mt-2">
+                            <i class="fas fa-arrow-left"></i> Cancelar
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección derecha: Lista de Precios -->
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-dark text-white text-center">
+                    <h5 class="mb-0">
+                        <i class="fas fa-list"></i> Precios Registrados
+                    </h5>
+                </div>
+                <div class="card-body">
+                    {% if precio_list %}
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Producto</th>
+                                        <th>Precio</th>
+                                        <th>Fecha</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for precio in precio_list %}
+                                    <tr>
+                                        <td>{{ precio.id }}</td>
+                                        <td>{{ precio.producto }}</td>
+                                        <td>{{ precio.precio }}</td>
+                                        <td>{{ precio.fecha }}</td>
+                                        <td>
+                                            <a href="{% url 'kardex:precio_detail' precio.id %}" class="btn btn-info btn-sm">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                            <a href="{% url 'kardex:precio_update' precio.id %}" class="btn btn-warning btn-sm">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <a href="{% url 'kardex:precio_delete' precio.id %}" class="btn btn-danger btn-sm">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <p class="text-center text-muted">No hay registros de precios.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var productoInput = document.querySelector("input[name='producto']");
+        productoInput.focus();
+    });
+
+    function submitForm() {
+        var form = document.getElementById("precioForm");
+        var formData = new FormData(form);
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", form.action, true);
+        xhr.setRequestHeader("X-CSRFToken", formData.get("csrfmiddlewaretoken"));
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                // Manejar la respuesta del servidor aquí
+                alert("Precio guardado exitosamente.");
+            } else {
+                // Manejar el error aquí
+                alert("Error al guardar el precio.");
+            }
+        };
+        xhr.send(formData);
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block title %}Editar Ticket{% endblock %}
+
+{% block content %}
+<h2>Editar Ticket #{{ ticket.consecutivo }}</h2>
+
+<!-- Formulario del Ticket -->
+<form method="post">
+    {% csrf_token %}
+    {{ ticket_form.as_p }}
+    <button type="submit" name="guardar_ticket" class="btn btn-primary">Guardar Ticket</button>
+</form>
+
+<hr>
+
+<!-- Formulario para agregar detalles -->
+<h3>Agregar Detalle</h3>
+<form method="post">
+    {% csrf_token %}
+    {{ detalle_form.as_p }}
+    <button type="submit" name="agregar_detalle" class="btn btn-success">Agregar Detalle</button>
+</form>
+
+<!-- Lista de detalles -->
+<h3 class="mt-4">Detalles del Ticket</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Artículo</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Subtotal</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for detalle in detalles %}
+        <tr>
+            <td>{{ detalle.articulo.nombre }}</td>
+            <td>{{ detalle.cantidad }}</td>
+            <td>{{ detalle.precio }}</td>
+            <td>{{ detalle.cantidad|default:0|floatformat:2 }}</td>
+            <td>
+                <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}About - MyPortfolio{% endblock %}
+{% block body_class %}about-page{% endblock %}
+ 
+{% block content %}
+<!-- Page Title -->
+<div class="page-title light-background">
+  <div class="container">
+    <h1>About</h1>
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li class="current">About</li>
+      </ol>
+    </nav>
+  </div>
+</div><!-- End Page Title -->
+
+<!-- About Section -->
+{% include "about/about_section.html" %}
+
+<!-- Resume Section -->
+{% include "about/resume_section.html" %}
+{% endblock %}

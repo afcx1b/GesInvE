@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h2>Listado de Ventas</h2>
+    <a href="{% url 'sales:venta_create' %}" class="btn btn-primary mb-3">Nueva Venta</a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Fecha</th>
+                <th>Total</th>
+                <th>Tipo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for venta in ventas %}
+            <tr>
+                <td>{{ venta.cliente.nombre }}</td>
+                <td>{{ venta.fecha }}</td>
+                <td>{{ venta.total }}</td>
+                <td>{{ venta.get_tipo_display }}</td>
+                <td>
+                    <a href="{% url 'sales:venta_update' venta.pk %}" class="btn btn-sm btn-warning">Editar</a>
+                    <a href="{% url 'sales:venta_delete' venta.pk %}" class="btn btn-sm btn-danger">Eliminar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}Lista de Tickets{% endblock %}
+
+{% block content %}
+<h2>Lista de Tickets</h2>
+<a href="{% url 'crear_ticket' %}" class="btn btn-primary mb-3">Crear Ticket</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Número</th>
+            <th>Cliente</th>
+            <th>Fecha</th>
+            <th>Total</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for ticket in tickets %}
+        <tr>
+            <td>{{ ticket.consecutivo }}</td>
+            <td>{{ ticket.cliente.nombre }}</td>
+            <td>{{ ticket.fecha }}</td>
+            <td>{{ ticket.total }}</td>
+            <td>
+                <a href="{% url 'agregar_detalle_ticket' ticket.id %}" class="btn btn-sm btn-info">Detalles</a>
+                <a href="{% url 'eliminar_ticket' ticket.id %}" class="btn btn-sm btn-danger">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

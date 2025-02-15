@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run makemigrations",
+            "type": "shell",
+            "command": "python manage.py makemigrations",
+            "problemMatcher": [],
+            "dependsOn": "Run migrate"
+        },
+        {
+            "label": "Run migrate",
+            "type": "shell",
+            "command": "python manage.py migrate",
+            "problemMatcher": [],
+            "dependsOn": "Run server"
+        },
+        {
+            "label": "Run server",
+            "type": "shell",
+            "command": "python manage.py runserver",
+            "problemMatcher": []
+        }
+    ]
+}

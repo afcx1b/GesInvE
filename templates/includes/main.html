@@ -1,0 +1,12 @@
+<main class="col-12 px-md-4" style="margin-top: 60px;">
+    <!-- Barra de navegación secundaria -->
+    <nav aria-label="breadcrumb" class="mt-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+            {% block breadcrumb %}{% endblock %}
+        </ol>
+    </nav>
+    <div class="container mt-3">
+        {% block content %}{% endblock %}
+    </div>
+</main>

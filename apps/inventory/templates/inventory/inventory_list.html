@@ -1,0 +1,96 @@
+{% extends 'layout.html' %}{% load static %}
+
+{% block breadcrumb %}
+    {% for item in breadcrumb %}
+        <li class="breadcrumb-item"><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endfor %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="text-center">Lista de Inventarios</h2>
+    </div>
+
+    <div class="row mb-3">
+        <!-- Botón de crear inventario -->
+        <div class="col-md-2">
+            <a href="{% url 'inventory:inventory_create' %}" class="btn btn-success w-100">+ Nuevo Inventario</a>
+        </div>
+        <!-- Campo de búsqueda -->
+        <div class="col-md-6">
+            <form method="get" action=".">
+                <input type="text" name="q" id="searchInput" class="form-control" placeholder="Buscar inventarios..." value="{{ search_query }}">
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Tabla de inventarios -->
+        <div class="col-md-8">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover" id="inventoryTable">
+                    <thead class="table-dark sticky-top">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Artículo</th>
+                            <th scope="col">Cantidad Disponible</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for inventario in inventarios %}
+                        <tr>
+                            <td>{{ forloop.counter }}</td>
+                            <td>{{ inventario.articulo }}</td>
+                            <td>{{ inventario.cantidad_disponible }}</td>
+                            <td>
+                                <a href="{% url 'inventory:inventory_edit' inventario.pk %}" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <form action="{% url 'inventory:inventory_delete' inventario.pk %}" method="post" style="display:inline;">
+                                    {% csrf_token %}
+                                    <button type="submit" class="btn btn-danger btn-sm">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="4" class="text-center">No hay inventarios registrados</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <!-- Paginación -->
+            <div class="d-flex justify-content-center">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        {% if inventarios.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ inventarios.previous_page_number }}" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% for num in inventarios.paginator.page_range %}
+                        <li class="page-item {% if inventarios.number == num %}active{% endif %}">
+                            <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                        </li>
+                        {% endfor %}
+                        {% if inventarios.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ inventarios.next_page_number }}" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

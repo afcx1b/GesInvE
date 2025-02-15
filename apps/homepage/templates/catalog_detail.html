@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  // ...existing code...
+</head>
+
+<body class="catalog-detail-page">
+  // ...existing code...
+
+  <main class="main">
+    <!-- Catálogo Detail Section -->
+    <section id="catalog-detail" class="catalog-detail section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>{{ catalog.name }}</h2>
+            <p>{{ catalog.description }}</p>
+            <p>Marca: {{ catalog.brand }}</p>
+            <p>PVP: {{ catalog.pvp }}</p>
+          </div>
+        </div>
+        <div class="row">
+          {% for product in products %}
+          <div class="col-lg-4 col-md-6 product-item">
+            <div class="product-content h-100">
+              <img src="{{ product.image.url }}" class="img-fluid lazyload" alt="{{ product.name }}">
+              <div class="product-info">
+                <h4>{{ product.name }}</h4>
+                <p>Marca: {{ product.brand }}</p>
+                <p>Precio: {{ product.price }}</p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section><!-- /Catálogo Detail Section -->
+  </main>
+
+  // ...existing code...
+</body>
+</html>

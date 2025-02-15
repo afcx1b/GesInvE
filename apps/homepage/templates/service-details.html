@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Service Details - MyPortfolio{% endblock %}
+{% block body_class %}service-details-page{% endblock %}
+
+{% block content %}
+<!-- Page Title -->
+<div class="page-title light-background">
+  <div class="container">
+    <h1>Service Details</h1>
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li class="current">Service Details</li>
+      </ol>
+    </nav>
+  </div>
+</div><!-- End Page Title -->
+
+<!-- Service Details Section -->
+{% include "service-details/service-details-section.html" %}
+
+<!-- Testimonials Section -->
+{% include "service-details/testimonials-section.html" %}
+{% endblock %}

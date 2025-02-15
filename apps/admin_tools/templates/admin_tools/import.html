@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block breadcrumb %}
+    {% for item in breadcrumb %}
+        <li class="breadcrumb-item"><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endfor %}
+{% endblock %}
+
+{% block content %}
+<h2>Importar Datos</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <label>Selecciona una aplicación:</label>
+    <select name="app_label">
+
+        <option value="brands">Marcas</option>
+        <option value="cashier">Caja</option>
+        <option value="catalogs">Catálogos</option>
+        <option value="products">Productos</option>
+        <option value="categories">Categorías</option>
+        <option value="users">Usuarios</option>
+
+    </select>
+    <label>Selecciona una tabla:</label>
+    <select name="table">
+        <option value="Product">Productos</option>
+        <option value="Category">Categorías</option>
+        <option value="Brand">Marcas</option>
+        <option value="Customer">Clientes</option>
+        <!-- Agregar más tablas -->
+    </select>
+    <button type="submit">Importar</button>
+</form>
+{% endblock %}

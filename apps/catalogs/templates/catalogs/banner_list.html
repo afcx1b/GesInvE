@@ -1,0 +1,30 @@
+{% extends 'list.html' %}
+{% block content %}
+  <h2>Lista de Banners</h2>
+  <a href="{% url 'banners:banner_create' %}" class="btn btn-primary mb-3">Crear Nuevo Banner</a>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Imagen</th>
+        <th>Categoría</th>
+        <th>Marca</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for banner in banners %}
+        <tr>
+          <td>{{ banner.title }}</td>
+          <td><img src="{{ banner.image.url }}" alt="{{ banner.title }}" width="100"></td>
+          <td>{{ banner.category.name }}</td>
+          <td>{{ banner.brand.name }}</td>
+          <td>
+            <a href="{% url 'banners:banner_edit' banner.id %}" class="btn btn-warning btn-sm">Editar</a>
+            <a href="{% url 'banners:banner_delete' banner.id %}" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de eliminar este banner?')">Eliminar</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

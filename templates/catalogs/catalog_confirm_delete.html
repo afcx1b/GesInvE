@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}{% block content %}
+<div class="container mt-4">
+    <h1>Eliminar Catálogo</h1>
+    <p>¿Estás seguro de que deseas eliminar el catálogo "{{ catalog.title }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a href="{% url 'catalogs:catalog_list' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+{% endblock %}

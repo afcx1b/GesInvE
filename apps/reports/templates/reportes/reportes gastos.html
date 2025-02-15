@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block title %}Reporte de Gastos{% endblock %}
+
+{% block content %}
+<h2>Reporte de Gastos</h2>
+<form method="get">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Filtrar</button>
+</form>
+
+<h3 class="mt-4">Gastos</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Descripción</th>
+            <th>Fecha</th>
+            <th>Monto</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for gasto in gastos %}
+        <tr>
+            <td>{{ gasto.descripcion }}</td>
+            <td>{{ gasto.fecha }}</td>
+            <td>{{ gasto.monto }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<p><strong>Total Gastos:</strong> {{ total_gastos }}</p>
+{% endblock %}

@@ -1,0 +1,8 @@
+{
+    "brands": true,
+    "cashier": true,
+    "catalogs": true,
+    "categories": true,
+    "products": true,
+    "users": true
+}

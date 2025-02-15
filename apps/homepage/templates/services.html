@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Services - MyPortfolio{% endblock %}
+{% block body_class %}services-page{% endblock %}
+
+{% block content %}
+<!-- Page Title -->
+<div class="page-title light-background">
+  <div class="container">
+    <h1>Services</h1>
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li class="current">Services</li>
+      </ol>
+    </nav>
+  </div>
+</div><!-- End Page Title -->
+
+<!-- Services Section -->
+<section id="services" class="services section">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- ...existing code for service items... -->
+    </div>
+  </div>
+</section><!-- /Services Section -->
+
+<!-- Pricing Section -->
+<section id="pricing" class="pricing section">
+  <!-- ...existing code for pricing section... -->
+</section><!-- /Pricing Section -->
+
+<!-- Alt Pricing Section -->
+<section id="alt-pricing" class="alt-pricing section">
+  <!-- ...existing code for alt pricing section... -->
+</section><!-- /Alt Pricing Section -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+  <!-- ...existing code for testimonials section... -->
+</section><!-- /Testimonials Section -->
+{% endblock %}

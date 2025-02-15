@@ -1,0 +1,7 @@
+"idProduct","barcode","product","imagen","is_new","idCategory_id","idMarca_id","idUnit_id"
+1,"101011010",pruebasss,products/908304008_pruebasss.jpg,0,423,1,1
+2,"908304008011",WWWW,products/908304008_WWWW.jpg,0,423,1,1
+3,"908304008012",PESTANAS 0.15 D,products/908304008_PESTANAS_0.15_D.jpg,0,423,1,1
+4,"908304008013",aclarante 3,products/908304008013_product_Product_6839_Field_32.jpg,0,423,1,1
+5,"908303009001",especial 3,products/908303009001_Product_6857_Field_32.jpg,0,406,2,1
+6,"908303009002",samba,products/908303009002_Product_5525_Field_32.jpg,0,406,1,1

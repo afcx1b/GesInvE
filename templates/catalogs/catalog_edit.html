@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}{% block content %}
+<div class="container mt-4">
+    <h1>Editar Catálogo</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ catalog_form.as_p }}
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a href="{% url 'catalogs:catalog_list' %}" class="btn btn-secondary">Volver a la lista de catálogos</a>
+    </form>
+</div>
+{% endblock %}

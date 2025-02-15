@@ -1,0 +1,48 @@
+{% extends 'list.html' %}
+
+{% block breadcrumb %}
+    {% for item in breadcrumb %}
+        <li class="breadcrumb-item"><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endfor %}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-3">Lista de Unidades</h2>
+    
+    <a href="{% url 'cashier:unit_create' %}" class="btn btn-primary mb-3">Nueva Unidad</a>
+
+    {% if units %}
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Unidad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for unit in units %}
+                <tr>
+                    <td>{{ unit.idUnit }}</td>
+                    <td>{{ unit.name }}</td>
+                    <td>
+                        <a href="{% url 'cashier:unit_edit' unit.idUnit %}" class="btn btn-warning btn-sm">
+                            <i class="fas fa-edit fa-xs"></i>
+                        </a>
+                        <form action="{% url 'cashier:unit_delete' unit.idUnit %}" method="post" style="display:inline;">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash-alt fa-xs"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No hay unidades registradas.</p>
+    {% endif %}
+</div>
+{% endblock %}

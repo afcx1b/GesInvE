@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card shadow-lg p-4 text-center">
+        <h2 class="text-danger">Confirmar Eliminación</h2>
+        <p>¿Estás seguro de que deseas eliminar la orden <strong>#{{ order.id }}</strong>?</p>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+            <a href="{% url 'catalogs:orders_list' %}" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+</div>
+{% endblock %}
