@@ -1,0 +1,101 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'lib/datatables-1.10.25/css/dataTables.bootstrap4.min.css' %}"/>
+    <link rel="stylesheet"
+          href="{% static 'lib/datatables-1.10.25/plugins/responsive-2.2.9/css/responsive.bootstrap4.min.css' %}"/>
+    <script src="{% static 'lib/datatables-1.10.25/js/jquery.dataTables.js' %}"></script>
+    <script src="{% static 'lib/datatables-1.10.25/js/dataTables.bootstrap4.min.js' %}"></script>
+    <script src="{% static 'lib/datatables-1.10.25/plugins/responsive-2.2.9/js/dataTables.responsive.min.js' %}"></script>
+    <script src="{% static 'lib/datatables-1.10.25/plugins/responsive-2.2.9/js/responsive.bootstrap4.min.js' %}"></script>
+
+    {% block head_list %}
+
+    {% endblock %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">
+                <i class="fas fa-search"></i>
+                <b>{{ title }}</b>
+            </h3>
+        </div>
+        <div class="card-body">
+            <div class="container-fluid">
+                {% block content_list_before %}{% endblock %}
+                <table class="table table-bordered" id="data">
+                    <thead>
+                    {% block columns %}
+
+                    {% endblock %}
+                    </thead> 
+                    <tbody>
+                    {% block rows %}
+                        {% for catalog in catalogs %}
+                            <tr>
+                                <td>{{ catalog.title }}</td>
+                                <td>{{ catalog.brand.name }}</td>
+                                <td>
+                                    <img src="{{ catalog.image.url }}" alt="Imagen del Catálogo" class="img-thumbnail" style="max-width: 100px; cursor: pointer;" onclick="showImageModal('{{ catalog.image.url }}')">
+                                </td>
+                                <td>
+                                    <a href="{% url 'catalogs:catalog_edit' catalog.idCatalog %}" class="btn btn-primary">Editar</a>
+                                    <a href="{% url 'catalogs:catalog_delete' catalog.idCatalog %}" class="btn btn-danger">Eliminar</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    {% endblock %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% block list_card_footer %}
+            <div class="card-footer">
+                {% block buttons_list %}
+                    <a href="{{ create_url }}" class="btn btn-primary btn-flat btnTest">
+                        <i class="fas fa-plus"></i> Nuevo registro
+                    </a>
+                    <a href="{{ list_url }}" class="btn btn-success btn-flat">
+                        <i class="fas fa-sync"></i> Actualizar
+                    </a>
+                {% endblock %}
+            </div>
+        {% endblock %}
+    </div>
+
+    <!-- Modal de vista previa de la imagen -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Vista previa de la imagen</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="#" alt="Imagen del Catálogo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascript %}
+    <script type="application/javascript">
+        $(function () {
+            $('#data').DataTable({
+                responsive: true,
+                autoWidth: false
+            });
+        });
+
+        function showImageModal(imageUrl) {
+            $('#modalImage').attr('src', imageUrl);
+            $('#imageModal').modal('show');
+        }
+    </script>
+{% endblock %}

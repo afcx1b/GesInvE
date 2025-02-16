@@ -149,6 +149,30 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-book"></i>
                         <p>
+                            Catálogos
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{% url 'catalogs:catalog_list' %}" class="nav-link">
+                                <i class="nav-icon fas fa-list"></i>
+                                <p>Catálogos</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'catalogs:catalog_product_list' %}" class="nav-link">
+                                <i class="nav-icon fas fa-box"></i>
+                                <p>Productos de Catálogos</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-book"></i>
+                        <p>
                             Kardex
                             <i class="fas fa-angle-left right"></i>
                         </p>
@@ -263,30 +287,6 @@
                             <a href="{% url 'construccion' %}" class="nav-link">
                                 <i class="nav-icon fas fa-file-alt"></i>
                                 <p>Reporte</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-book"></i>
-                        <p>
-                            Catálogos
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{% url 'catalogs:catalog_list' %}" class="nav-link">
-                                <i class="nav-icon fas fa-list"></i>
-                                <p>Catálogos</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{% url 'catalogs:catalog_product_list' %}" class="nav-link">
-                                <i class="nav-icon fas fa-box"></i>
-                                <p>Productos de Catálogos</p>
                             </a>
                         </li>
                     </ul>
