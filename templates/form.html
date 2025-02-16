@@ -35,14 +35,12 @@
                                 {% endfor %}
                             </ul>
                         </div>
-                    {% endif %} 
+                    {% endif %}
                     {% for field in form.visible_fields %}
                         <div class="form-group">
                             <label for="email">{{ field.label }}:</label>
                             {% if field|is_checkbox %}
                                <br>{{ field }}
-                            {% elif field.field.widget.input_type == 'file' %}
-                                {{ field|add_class:'form-control-file' }}
                             {% else %}
                                 {{ field|add_class:'form-control'|attr:'autocomplete:off' }}
                             {% endif %}

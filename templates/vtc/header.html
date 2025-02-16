@@ -5,9 +5,6 @@
         </li>
         <li class="nav-item d-none d-sm-inline-block">
             <a href="{% url 'dashboard' %}" class="nav-link">Home</a>
-        </li>        
-        <li class="nav-item d-none d-sm-inline-block">
-            <a href="{% url 'index' %}" class="nav-link">Tienda</a>
         </li>
     </ul>
     <ul class="navbar-nav ml-auto">
@@ -20,15 +17,15 @@
                         style="left: 0px; right: inherit;">
                         {% for g in request.user.groups.all %}
                             {% if g.id != request.session.group.id %}
-                                <li><a href="{% url 'users:user_choose_profile' g.id %}"
+                                <li><a href="{% url 'user_choose_profile' g.id %}"
                                        class="dropdown-item">{{ g.name }} </a></li>
                             {% endif %}
                         {% endfor %}
                     </ul>
                 {% endif %}
             </li>
-        {% endif %} 
-        <li class="nav-item dropdown">
+        {% endif %}
+        <li class="nav-item dropdown"> 
             <a class="nav-link" data-toggle="dropdown" href="#">
                 <i class="fas fa-users-cog"></i>
             </a>
@@ -37,11 +34,11 @@
                         Sú último acceso fue {{ request.user.last_login }}
                     </span>
                 <div class="dropdown-divider"></div>
-                <a href="{% url 'users:user_update_profile' %}" class="dropdown-item">
+                <a href="{% url 'user_update_profile' %}" class="dropdown-item">
                     <i class="fas fa-edit mr-2"></i> Editar perfil
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="{% url 'users:user_change_password' %}" class="dropdown-item">
+                <a href="{% url 'user_change_password' %}" class="dropdown-item">
                     <i class="fas fa-lock mr-2"></i> Editar password
                 </a>
                 <div class="dropdown-divider"></div>
@@ -51,7 +48,7 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{% url 'login:logout' %}">
+            <a class="nav-link" href="{% url 'logout' %}">
                 <i class="fas fa-power-off" aria-hidden="true"></i>
             </a>
         </li>
