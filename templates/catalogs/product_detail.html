@@ -1,9 +1,0 @@
-{% extends 'layout.html' %}
-{% block content %}
-<div class="container mt-4">
-    <h1>{{ product.name }}</h1>
-    <p>Precio: {{ product.price }}</p>
-    <p>Descripción: {{ product.description }}</p>
-    <a href="{% url 'catalogs:catalog_by_category' product.idCategory.idCategory %}" class="btn btn-secondary mt-3">Volver a la lista de productos</a>
-</div>
-{% endblock %}
